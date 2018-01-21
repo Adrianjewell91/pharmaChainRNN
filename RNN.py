@@ -38,7 +38,7 @@ def transform_training_data(X):
 	#create a 3D numpy array
 	x_train = np.zeros((X.shape[0] - time_step + 1, time_step ,X.shape[1]))
 	for i in range(X.shape[0] - time_step + 1):
-		x_train[i] = X[i: i + time_step, :, :]
+		x_train[i] = X[i: i + time_step, :]
 
 	return x_train
 
